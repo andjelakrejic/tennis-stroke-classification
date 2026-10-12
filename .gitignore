@@ -30,3 +30,9 @@ phase3_model_run*.keras
 # Misc
 test_frame.jpg
 BELESKE.txt
+
+# Extra files
+clean.py
+rebuild_player.py
+train_lstm_workshop.py
+zoom_video.py
