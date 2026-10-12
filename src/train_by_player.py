@@ -5,9 +5,9 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import LSTM, Dense, Dropout
 from tensorflow.keras.callbacks import EarlyStopping
 
-X = np.load("X.npy")
-y = np.load("y.npy")
-players = np.load("players.npy", allow_pickle=True)
+X = np.load("../X.npy")
+y = np.load("../y.npy")
+players = np.load("../players.npy", allow_pickle=True)
 
 print("Players in the dataset:")
 print(np.unique(players))

@@ -12,9 +12,9 @@ from tensorflow.keras.callbacks import EarlyStopping
 PHASE1_PLAYERS = ["igrac1", "igrac2", "igrac3", "igrac4", "igrac5"]
 N_RUNS = 3
 
-X = np.load("X.npy")
-y = np.load("y.npy")
-players = np.load("players.npy", allow_pickle=True)
+X = np.load("../X.npy")
+y = np.load("../y.npy")
+players = np.load("../players.npy", allow_pickle=True)
 
 # Faza 1 koristi samo osnovnih 5 igraca u treningu/testu -
 # svi ostali (uglovi, levoruki, rezerva za 4.4) se iskljucuju

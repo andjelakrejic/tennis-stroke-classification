@@ -4,12 +4,12 @@ from sklearn.metrics import confusion_matrix, classification_report
 
 # Load the dataset and the model
 
-X = np.load("X.npy")
-y = np.load("y.npy")
-players = np.load("players.npy", allow_pickle=True)
+X = np.load("../X.npy")
+y = np.load("../y.npy")
+players = np.load("../players.npy", allow_pickle=True)
 
 TEST_PLAYER = "igrac9_left"
-MODEL_PATH = "phase3_model_run3.keras"
+MODEL_PATH = "../phase3_model_run3.keras"
 
 test_mask = players == TEST_PLAYER
 X_test = X[test_mask]

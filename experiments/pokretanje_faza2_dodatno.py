@@ -32,9 +32,9 @@ BASELINE_NO_AUGMENTATION = {
     "igrac5_angle_bh": 50.00, "igrac5_angle_fh": 50.00,
 }
 
-X = np.load("X.npy")
-y = np.load("y.npy")
-players = np.load("players.npy", allow_pickle=True)
+X = np.load("../X.npy")
+y = np.load("../y.npy")
+players = np.load("../players.npy", allow_pickle=True)
 
 
 def build_model():

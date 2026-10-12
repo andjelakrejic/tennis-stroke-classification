@@ -14,12 +14,12 @@ from sklearn.metrics import confusion_matrix, classification_report
 # PODESAVANJA
 # ------------------------------------------------
 
-TEST_DIR = "stress_tests/angle_test/sinner"
+TEST_DIR = "../stress_tests/angle_test/sinner"
 
-POSE_MODEL_PATH = "pose_landmarker_full.task"
+POSE_MODEL_PATH = "../pose_landmarker_full.task"
 
 # Ako testiras igraca5 iz novog ugla:
-CLASSIFICATION_MODEL_PATH = "tennis_stroke_lstm_test_igrac5.keras"
+CLASSIFICATION_MODEL_PATH = "../tennis_stroke_lstm_test_igrac5.keras"
 
 SEQUENCE_LENGTH = 30
 

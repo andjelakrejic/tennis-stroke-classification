@@ -241,7 +241,7 @@ plt.title("Tačnost tokom treninga")
 plt.legend()
 plt.tight_layout()
 
-plt.savefig("training_accuracy.png")
+plt.savefig("results/training_accuracy.png")
 plt.show()
 
 
@@ -264,7 +264,7 @@ plt.title("Loss tokom treninga")
 plt.legend()
 plt.tight_layout()
 
-plt.savefig("training_loss.png")
+plt.savefig("results/training_loss.png")
 plt.show()
 
 from sklearn.metrics import confusion_matrix, classification_report

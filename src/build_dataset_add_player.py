@@ -5,8 +5,8 @@ from mediapipe.tasks import python
 from mediapipe.tasks.python import vision
 import os
 
-DATASET_DIR = "dataset"
-MODEL_PATH = "pose_landmarker_full.task"
+DATASET_DIR = "../dataset"
+MODEL_PATH = "../pose_landmarker_full.task"
 
 SEQUENCE_LENGTH = 30
 
@@ -182,9 +182,9 @@ def resize_sequence(sequence, target_length):
 # new clips for an existing player)
 # ------------------------------------------------
 
-if os.path.exists("video_paths.npy"):
+if os.path.exists("../video_paths.npy"):
     existing_video_paths = set(
-        np.load("video_paths.npy", allow_pickle=True).tolist()
+        np.load("../video_paths.npy", allow_pickle=True).tolist()
     )
 else:
     existing_video_paths = set()
@@ -295,14 +295,14 @@ for player in np.unique(players):
 # MERGE WITH THE EXISTING DATASET (if it exists)
 # ------------------------------------------------
 
-if os.path.exists("X.npy"):
+if os.path.exists("../X.npy"):
     print()
     print("Loading existing dataset to merge...")
 
-    X_old = np.load("X.npy")
-    y_old = np.load("y.npy")
-    players_old = np.load("players.npy", allow_pickle=True)
-    video_paths_old = np.load("video_paths.npy", allow_pickle=True)
+    X_old = np.load("../X.npy")
+    y_old = np.load("../y.npy")
+    players_old = np.load("../players.npy", allow_pickle=True)
+    video_paths_old = np.load("../video_paths.npy", allow_pickle=True)
 
     X_combined = np.concatenate([X_old, X], axis=0)
     y_combined = np.concatenate([y_old, y], axis=0)
@@ -320,10 +320,10 @@ else:
     video_paths_combined = video_paths
 
 
-np.save("X.npy", X_combined)
-np.save("y.npy", y_combined)
-np.save("players.npy", players_combined)
-np.save("video_paths.npy", video_paths_combined)
+np.save("../X.npy", X_combined)
+np.save("../y.npy", y_combined)
+np.save("../players.npy", players_combined)
+np.save("../video_paths.npy", video_paths_combined)
 
 print()
 print("DATASET UPDATED")

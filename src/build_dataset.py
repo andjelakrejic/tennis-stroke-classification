@@ -5,8 +5,8 @@ from mediapipe.tasks import python
 from mediapipe.tasks.python import vision
 import os
 
-DATASET_DIR = "dataset"
-MODEL_PATH = "pose_landmarker_full.task"
+DATASET_DIR = "../dataset"
+MODEL_PATH = "../pose_landmarker_full.task"
 
 SEQUENCE_LENGTH = 30
 
@@ -210,10 +210,10 @@ for player in np.unique(players):
     )
 
 
-np.save("X.npy", X)
-np.save("y.npy", y)
-np.save("players.npy", players)
-np.save("video_paths.npy", video_paths)
+np.save("../X.npy", X)
+np.save("../y.npy", y)
+np.save("../players.npy", players)
+np.save("../video_paths.npy", video_paths)
 
 print()
 print("Saved files:")

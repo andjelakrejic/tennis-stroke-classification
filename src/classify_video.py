@@ -10,8 +10,8 @@ from tensorflow.keras.models import load_model
 
 VIDEO_PATH = "videos/igrac3/video1.mp4"
 
-POSE_MODEL_PATH = "pose_landmarker_full.task"
-CLASSIFIER_PATH = "tennis_stroke_lstm.keras"
+POSE_MODEL_PATH = "../pose_landmarker_full.task"
+CLASSIFIER_PATH = "../tennis_stroke_lstm.keras"
 
 WRIST_LANDMARK = 16
 

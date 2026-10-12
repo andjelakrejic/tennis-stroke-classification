@@ -11,9 +11,9 @@ ZOOMED_TEST_SETS = [
 
 N_RUNS = 3
 
-X = np.load("X.npy")
-y = np.load("y.npy")
-players = np.load("players.npy", allow_pickle=True)
+X = np.load("../X.npy")
+y = np.load("../y.npy")
+players = np.load("../players.npy", allow_pickle=True)
 
 # Originalni (ne-zumirani) rezultati iz pokretanje_faza2.py, za poredjenje
 ORIGINAL_RESULTS = {

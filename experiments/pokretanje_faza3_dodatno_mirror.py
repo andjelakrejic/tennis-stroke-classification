@@ -19,9 +19,9 @@ NO_AUGMENTATION_RESULTS = {"igrac8_left": 0.00, "igrac9_left": 0.00}
 MIRROR_TRANSFORM_RESULTS = {"igrac8_left": 100.00, "igrac9_left": 100.00}
 REAL_LEFTY_RESULTS = {"igrac8_left": 0.00, "igrac9_left": 0.00}
 
-X = np.load("X.npy")
-y = np.load("y.npy")
-players = np.load("players.npy", allow_pickle=True)
+X = np.load("../X.npy")
+y = np.load("../y.npy")
+players = np.load("../players.npy", allow_pickle=True)
 
 SWAP_PAIRS = [
     (1, 4), (2, 5), (3, 6), (7, 8), (9, 10),

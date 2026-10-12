@@ -16,9 +16,9 @@ RESERVED_PREFIXES = ("igrac6", "igrac7")
 
 N_RUNS = 3
 
-X = np.load("X.npy")
-y = np.load("y.npy")
-players = np.load("players.npy", allow_pickle=True)
+X = np.load("../X.npy")
+y = np.load("../y.npy")
+players = np.load("../players.npy", allow_pickle=True)
 
 is_reserved = np.array([
     any(p.startswith(prefix) for prefix in RESERVED_PREFIXES)

@@ -19,9 +19,9 @@ N_RUNS = 3
 NO_AUGMENTATION_RESULTS = {"igrac8_left": 0.00, "igrac9_left": 0.00}
 MIRROR_RESULTS = {"igrac8_left": 100.00, "igrac9_left": 100.00}
 
-X = np.load("X.npy")
-y = np.load("y.npy")
-players = np.load("players.npy", allow_pickle=True)
+X = np.load("../X.npy")
+y = np.load("../y.npy")
+players = np.load("../players.npy", allow_pickle=True)
 
 
 def build_model():

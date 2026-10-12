@@ -11,9 +11,9 @@ from tensorflow.keras.callbacks import EarlyStopping
 # 1. UČITAVANJE PODATAKA
 # ------------------------------------------------
 
-X = np.load("X.npy")
-y = np.load("y.npy")
-players = np.load("players.npy", allow_pickle=True)
+X = np.load("../X.npy")
+y = np.load("../y.npy")
+players = np.load("../players.npy", allow_pickle=True)
 
 print("===================================")
 print("UČITANI PODACI")

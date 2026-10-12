@@ -20,9 +20,9 @@ ANGLE_TEST_SETS = [
 
 N_RUNS = 3
 
-X = np.load("X.npy")
-y = np.load("y.npy")
-players = np.load("players.npy", allow_pickle=True)
+X = np.load("../X.npy")
+y = np.load("../y.npy")
+players = np.load("../players.npy", allow_pickle=True)
 
 # Trening skup je FIKSAN kroz sve testove - svih 5 igraca iz faze 1
 # (0 stepeni ugao), bez izostavljanja - jer testiramo generalizaciju

@@ -6,7 +6,7 @@ from mediapipe.tasks.python import vision
 
 VIDEO_PATH = "dataset/ja/forehand/fh_00.mp4"
 
-MODEL_PATH = "pose_landmarker_full.task"
+MODEL_PATH = "../pose_landmarker_full.task"
 
 NUM_LANDMARKS = 33
 FEATURES_PER_LANDMARK = 2

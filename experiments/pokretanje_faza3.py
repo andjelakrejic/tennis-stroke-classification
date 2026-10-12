@@ -14,9 +14,9 @@ LEFTY_TEST_SETS = ["igrac8_left", "igrac9_left"]
 
 N_RUNS = 3
 
-X = np.load("X.npy")
-y = np.load("y.npy")
-players = np.load("players.npy", allow_pickle=True)
+X = np.load("../X.npy")
+y = np.load("../y.npy")
+players = np.load("../players.npy", allow_pickle=True)
 
 # Training set is fixed across all runs - all 5 base (right-handed) players,
 # no lefty data included at all in this baseline (no-augmentation) test.

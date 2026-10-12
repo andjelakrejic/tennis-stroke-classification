@@ -1,9 +1,9 @@
 import numpy as np
 
-X = np.load("X.npy")
-y = np.load("y.npy")
-players = np.load("players.npy", allow_pickle=True)
-video_paths = np.load("video_paths.npy", allow_pickle=True)
+X = np.load("../X.npy")
+y = np.load("../y.npy")
+players = np.load("../players.npy", allow_pickle=True)
+video_paths = np.load("../video_paths.npy", allow_pickle=True)
 
 print("PROVERA DATASETA")
 
