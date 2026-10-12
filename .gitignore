@@ -1,0 +1,32 @@
+# Virtual environments and IDE
+.venv/
+.venv311/
+venv/
+.idea/
+__pycache__/
+*.pyc
+
+# Data (recordings of real people) and large arrays
+dataset/
+unused/
+stress_tests/
+*.mp4
+*.avi
+*.mov
+X.npy
+y.npy
+players.npy
+video_paths.npy
+*_train_players.npy
+
+# Intermediate / experiment models (keep only final_model_run*.keras)
+tennis_stroke_lstm*.keras
+phase2_model_run*.keras
+phase3_model_run*.keras
+
+# MediaPipe model (downloaded separately, see README)
+*.task
+
+# Misc
+test_frame.jpg
+BELESKE.txt
